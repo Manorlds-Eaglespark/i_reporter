@@ -29,6 +29,8 @@
             <h3>Create New</h3>
             <button class="new_red_flag_button" onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><img
                     id="img_s" src="images/s_parcel.png" alt="logo"> <B>Red Flag Record </B></button>
+            <button class="new_intervation_button" onclick="document.getElementById('id03').style.display='block'" style="width:auto;"><img
+                    id="img_s" src="images/s_parcel.png" alt="logo"> <B>Intervation Request </B></button>
             <p>It is our responsibility as fellow citizens to ensure our country Uganda is corruption free.</p>
         
         </div>
@@ -75,6 +77,34 @@
                             <option value="large">Other</option>
                         </select>
                         <input type="submit" value="SUBMIT RED-FLAG">
+                    </form>
+                </div>
+            </div>
+    
+        </form>
+    </div>
+    <div id="id03" class="modal">
+        <form class="modal-content animate" action="active_orders.html">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="images/sealed-parcel.png" alt="Avatar" class="avatar">
+            </div>
+            <div class="container">
+                <div>
+                    <form action="/action_page.php">
+    
+                        <label for="lname">Request</label>
+                        <input type="text" id="lname" name="intervation" placeholder="Describe your intervation request..">
+    
+                        <label for="sector">Select Sector</label>
+                        <select id="office" name="office">
+                            <option value="small">Government</option>
+                            <option value="medium">Parliament</option>
+                            <option value="medium">Judiciary</option>
+                            <option value="medium">Police</option>
+                            <option value="large">Other</option>
+                        </select>
+                        <input type="submit" value="SUBMIT INTERVATION REQUESET">
                     </form>
                 </div>
             </div>
