@@ -11,9 +11,9 @@
 </head>
 
 <body>
-        <div class="pageHeading">
-            <span class="logo-l">i</span><span class="logo-r">Reporter</span>
-        </div>
+    <div class="pageHeading">
+        <span class="logo-l">i</span><span class="logo-r">Reporter</span>
+    </div>
 
 
     <div style="overflow:auto">
@@ -22,37 +22,34 @@
             <a href="user_profile.html">My Profile</a>
             <a href="records.html">My Records</a>
         </div>
-   
 
         <div class="main">
             <p id="theme_about">A Stand Against Corruption.</p>
             <h3>Create New</h3>
             <button class="new_red_flag_button" onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><img
                     id="img_s" src="images/s_parcel.png" alt="logo"> <B>Red Flag Record </B></button>
-            <button class="new_intervation_button" onclick="document.getElementById('id03').style.display='block'" style="width:auto;"><img
-                    id="img_s" src="images/s_parcel.png" alt="logo"> <B>Intervation Request </B></button>
+            <button class="new_intervation_button" onclick="document.getElementById('id03').style.display='block'"
+                style="width:auto;"><img id="img_s" src="images/s_parcel.png" alt="logo"> <B>Intervation Request </B></button>
             <p>It is our responsibility as fellow citizens to ensure our country Uganda is corruption free.</p>
-        
+
         </div>
-            
-            
-            <div class="right">
-                <h2 id="text_left">ABOUT</h2>
-                <p id="text_left">We aim at creating a corruption free world. Do not keep quiet, report corrupt officials
-                    immediately for proper Accountability, Unity and Development.</p>
-                &nbsp;
-                <h2 id="text_left">HOTLINE</h2>
-                <p id="text_left"><img id="contact_images" src="images/call.png" alt=""> 0414 5555 555</p>
-                <p id="text_left"><img id="contact_images" src="images/call.png" alt=""> 0414 4444 444</p>
-                <p id="text_left"><img id="contact_images" src="images/email.png" alt=""> ask@ireporter.com</p>
-            
-            </div>
-            
-            </div>
+
+
+        <div class="right">
+            <div class="LogOut"><a href="index.html">Logout</a></div>
+
+            <h2 id="text_left">HOTLINE</h2>
+            <p id="text_left"><img id="contact_images" src="images/call.png" alt=""> 0414 5555 555</p>
+            <p id="text_left"><img id="contact_images" src="images/call.png" alt=""> 0414 4444 444</p>
+            <p id="text_left"><img id="contact_images" src="images/email.png" alt=""> ask@ireporter.com</p>
+
+        </div>
+
+    </div>
     <div class="footer">Andela Level Up 35 December - Anorld Mukone, 2018</div>
-            
+
     <div id="id02" class="modal">
-        <form class="modal-content animate" action="records.html">
+        <form class="modal-content animate" action="active_orders.html">
             <div class="imgcontainer">
                 <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
                 <img src="images/sealed-parcel.png" alt="Avatar" class="avatar">
@@ -62,13 +59,13 @@
                     <form action="/action_page.php">
                         <label for="lname">Time of incident</label>
                         <input type="text" id="lname" name="user_phone" placeholder="Your phone number..">
-    
+
                         <label for="lname">Persons involved</label>
                         <input type="text" id="lname" name="names" placeholder="Names">
-    
+
                         <label for="lname">Incident</label>
                         <input type="text" id="lname" name="incident" placeholder="Explain what happened..">
-    
+
                         <label for="sector">Select sector</label>
                         <select id="office" name="office">
                             <option value="small">Government official</option>
@@ -80,9 +77,10 @@
                     </form>
                 </div>
             </div>
-    
+
         </form>
     </div>
+
     <div id="id03" class="modal">
         <form class="modal-content animate" action="active_orders.html">
             <div class="imgcontainer">
@@ -92,10 +90,10 @@
             <div class="container">
                 <div>
                     <form action="/action_page.php">
-    
+
                         <label for="lname">Request</label>
                         <input type="text" id="lname" name="intervation" placeholder="Describe your intervation request..">
-    
+
                         <label for="sector">Select Sector</label>
                         <select id="office" name="office">
                             <option value="small">Government</option>
@@ -108,20 +106,21 @@
                     </form>
                 </div>
             </div>
-    
+
         </form>
     </div>
-            <script>
-                var modal1 = document.getElementById('id02');
-                var modal3 = document.getElementById('id03');
+    <script>
+        var modal1 = document.getElementById('id02');
+        var modal3 = document.getElementById('id03');
 
-                // When the user clicks anywhere outside of the modal, close it
-                window.onclick = function (event) {
-                    if (event.target == modal1 || event.target == modal3) {
-                        modal.style.display = "none";
-                    }
-                }
-            </script>
-            </body>
-            
-            </html>
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal1 || event.target == modal3) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
