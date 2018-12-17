@@ -25,8 +25,13 @@
    
 
         <div class="main">
-      
-            </div>
+            <p id="theme_about">A Stand Against Corruption.</p>
+            <h3>Create New</h3>
+            <button class="new_red_flag_button" onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><img
+                    id="img_s" src="images/s_parcel.png" alt="logo"> <B>Red Flag Record </B></button>
+            <p>It is our responsibility as fellow citizens to ensure our country Uganda is corruption free.</p>
+        
+        </div>
             
             
             <div class="right">
@@ -44,7 +49,49 @@
             </div>
     <div class="footer">Andela Level Up 35 December - Anorld Mukone, 2018</div>
             
-            
+    <div id="id02" class="modal">
+        <form class="modal-content animate" action="records.html">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="images/sealed-parcel.png" alt="Avatar" class="avatar">
+            </div>
+            <div class="container">
+                <div>
+                    <form action="/action_page.php">
+                        <label for="lname">Time of incident</label>
+                        <input type="text" id="lname" name="user_phone" placeholder="Your phone number..">
+    
+                        <label for="lname">Persons involved</label>
+                        <input type="text" id="lname" name="names" placeholder="Names">
+    
+                        <label for="lname">Incident</label>
+                        <input type="text" id="lname" name="incident" placeholder="Explain what happened..">
+    
+                        <label for="sector">Select sector</label>
+                        <select id="office" name="office">
+                            <option value="small">Government official</option>
+                            <option value="medium">Police Persons</option>
+                            <option value="large">Public Hospital</option>
+                            <option value="large">Other</option>
+                        </select>
+                        <input type="submit" value="SUBMIT RED-FLAG">
+                    </form>
+                </div>
+            </div>
+    
+        </form>
+    </div>
+            <script>
+                var modal1 = document.getElementById('id02');
+                var modal3 = document.getElementById('id03');
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function (event) {
+                    if (event.target == modal1 || event.target == modal3) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
             </body>
             
             </html>
