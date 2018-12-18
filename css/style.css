@@ -173,6 +173,7 @@ body {
 .main {
     float: left;
     width: 60%;
+    overflow: hidden;
     padding: 0 20px;
 }
 
@@ -184,21 +185,6 @@ body {
     margin-right: 3.5%;
     margin-top: 2.5%;
     text-align: center;
-}
-
-@media only screen and (max-width:620px) {
-    /* For mobile phones: */
-    .menu,
-    .main,
-    .right,
-    .brother,
-    .login_button,
-    .register_button,
-    .sister,
-    .modal,
-    .modal-content {
-        width: 100%;
-    }
 }
 
 .footer {
@@ -528,4 +514,22 @@ img {
     width: auto;
     margin-left: 21px;
     margin-top: 21px;
+}
+
+@media only screen and (max-width:620px) {
+    /* For mobile phones: */
+    .menu,
+    .main,
+    .right,
+    .brother,
+    .login_button,
+    .register_button,
+    .sister,
+    .modal,
+    .modal-content {
+        width: 100%;
+    }
+    #disappear_small {
+        display: none;
+    }
 }
