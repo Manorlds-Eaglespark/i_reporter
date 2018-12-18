@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>iReporter</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <script src="main.js"></script>
@@ -18,22 +19,26 @@
 
     <div style="overflow:auto">
         <div class="menu">
-            <a href="home.html">HOME</a>
-            <a href="user_profile.html">My Profile</a>
-            <a href="records.html">My Records</a>
+            <a href="home.html">HOME..</a>
+            <a href="user_profile.html">PROFILE</a>
+            <a href="records.html">RECORDS</a>
+            <a href="redflags.html">REDFLAGS</a>
+            <a href="intervation.html">INTERVATION</a>
         </div>
 
         <div class="main">
             <p id="theme_about">A Stand Against Corruption.</p>
             <h3>Create New</h3>
             <button class="new_red_flag_button" onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><img
-                    id="img_s" src="images/s_parcel.png" alt="logo"> <B>Red Flag Record </B></button>
+                    id="img_s" src="images/flag.png" alt="logo"> <B>Red Flag Record </B></button>
             <button class="new_intervation_button" onclick="document.getElementById('id03').style.display='block'"
-                style="width:auto;"><img id="img_s" src="images/s_parcel.png" alt="logo"> <B>Intervation Request </B></button>
+                style="width:auto;"><img id="img_s" src="images/sos.png" alt="logo"> <B>Intervation Request </B></button>
             <p>It is our responsibility as fellow citizens to ensure our country Uganda is corruption free.</p>
 
+            <div class="father">
+                <img class="bannerImage" src="images/take_action.jpg">
+            </div>
         </div>
-
 
         <div class="right">
             <div class="LogOut"><a href="index.html">Logout</a></div>
@@ -52,7 +57,7 @@
         <form class="modal-content animate" action="active_orders.html">
             <div class="imgcontainer">
                 <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
-                <img src="images/sealed-parcel.png" alt="Avatar" class="avatar">
+                <img src="images/flag2.png" alt="Avatar" class="avatar">
             </div>
             <div class="container">
                 <div>
@@ -73,7 +78,7 @@
                             <option value="large">Public Hospital</option>
                             <option value="large">Other</option>
                         </select>
-                        <input type="submit" value="SUBMIT RED-FLAG">
+                        <input type="submit" value="SUBMIT REDFLAG">
                     </form>
                 </div>
             </div>
@@ -85,7 +90,7 @@
         <form class="modal-content animate" action="active_orders.html">
             <div class="imgcontainer">
                 <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
-                <img src="images/sealed-parcel.png" alt="Avatar" class="avatar">
+                <img src="images/sos2.png" alt="Avatar" class="avatar">
             </div>
             <div class="container">
                 <div>
