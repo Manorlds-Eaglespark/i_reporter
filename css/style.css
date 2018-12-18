@@ -72,6 +72,10 @@ body {
     color: #e40046;
 }
 
+#theme_blue {
+    color: #0f97d0;
+}
+
 .new_red_flag_button {
     background-color: #d3d3d3;
     color: #e40046;
@@ -196,12 +200,12 @@ body {
 .footer {
     background-color: #e5e5e5;
     text-align: center;
-    padding: 10px;
+    padding-top: 14px;
     position: fixed;
     bottom: 0px;
     width: 100%;
     max-width: 100%;
-    margin-top: 7px;
+    margin-top: 14px;
 }
 
 /* Full-width input fields */
