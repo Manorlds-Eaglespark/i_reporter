@@ -12,6 +12,10 @@ body {
     background-color: white;
 }
 
+#pointer_link {
+    text-decoration: none;
+}
+
 #img_s {
     width: 20px;
     height: auto;
@@ -42,7 +46,6 @@ body {
     text-decoration: none;
     color: #333;
 }
-
 
 .LogOut {
     text-align: left;
@@ -503,7 +506,8 @@ input[type=submit]:hover {
     border-radius: 5px;
     margin-bottom: 28px;
 }
-.form_style{
+
+.form_style {
     margin-bottom: 56px;
 }
 
